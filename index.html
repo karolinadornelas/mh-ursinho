@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="icon" href="scr/img/baixados (5).png">
+    <link rel="stylesheet" href="main.css">
+    <title>mh! customize seu ursinho!</title>
+</head>
+
+<body>
+
+    <div id="canvas-overflow">
+        <p class="versao">versão beta</p>
+        <div id="canvas-leap">
+            <header>
+                <div id="window-deco">
+                    <div class="top-description">
+                        <img src="/scr/img/site-assets/ursinho-base.png"
+                            alt="imagem do mascote da lojinha traçado em preto, com o fundo transparente"
+                            style="width: 35px;">
+                        <p>mh - decora ursinho!</p>
+                    </div>
+
+                    <div class="option-basics">
+                        <div class="minimum-box">_</div>
+                        <div class="square-box">☐</div>
+                        <div class="x-box">x</div>
+                    </div>
+
+                </div>
+                <div id="window-navigation-bar">
+                    <div class="arrows">
+                        <div class="arrow-left"><i class="fa-solid fa-arrow-left"></i></div>
+                        <div class="arrow-right"><i class="fa-solid fa-arrow-right"></i></div>
+                        <div class="arrow-rotate"><i class="fa-solid fa-rotate-right"></i></div>
+                    </div>
+                    <div class="site-adress">
+                        <p><i class="fa-solid fa-globe"></i>https://mh-decora-ursinho!</p>
+                    </div>
+                </div>
+            </header>
+
+            <div id="tab-content-comp">
+                <div class="navigation-tabs">
+                    <button class="tab-button active" data-tab="start"><i class="fa-solid fa-house"></i>inicio</button>
+                    <button class="tab-button" data-tab="about"><i class="fa-solid fa-seedling"></i>sobre</button>
+                    <button class="tab-button" data-tab="custom"><i
+                            class="fa-solid fa-pen-to-square"></i>custom!</button>
+                </div>
+
+                <div id="start" class="tab-content active">
+                    <div class="start-info">
+                        <div class="side-menu">
+                            <h2>nossos links</h2>
+                            <ul>
+                                <li class="instagram-a"><a
+                                        href="https://www.instagram.com/myheartcrochet.zip/">instagram</a></li>
+                                <li class="ttk-a"><a href="https://www.tiktok.com/@myheartcrochet.zip">tik tok</a></li>
+                                <li class="catalog-a"><a href="">catalogo</a></li>
+                                <li class="wpp-a"><a
+                                        href="https://api.whatsapp.com/send/?phone=5561995055629&text&type=phone_number&app_absent=0">whatsapp</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="welcome-card">
+                            <img src="/scr/img/site-assets/sprouts.gif" alt="">
+                            <div class="users">
+                                <p>enviamos para todo o brasil</p>
+                            </div>
+                            <h2>bem-vindo!</h2>
+                            <p>somos uma lojinha de artesanato que oferece fofuras em croche e biscuit</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="about" class="tab-content">
+                    <div class="about-text">
+                        <h2>como pesonalizar?</h2>
+                        <!-- <div class="img-txt-info">
+                            <img src="/scr/img/site-assets/story (1).png" alt="seleção de 3 bonequinhos de crochê">
+                        </div>
+
+                        <p>
+                            <i class="fa-solid fa-wand-sparkles"></i> <strong>crie sua companheirinha miffy! ♡</strong>
+                        </p> -->
+
+                        <p>
+                            na aba '<a href=""><i class="fa-solid fa-pen-to-square"></i>custom!</a>', você pode
+                            personalizar
+                            cada detalhe da seu ursinho, escolhendo cores e acessórios!
+                            🐰🎀 quando tudo estiver do jeitinho que você ama, é só finalizar o pedido e nós cuidamos do
+                            resto
+                            com muito carinho.✿
+                        </p>
+
+                        <p>💌 encomende agora e receba em casa uma fofura única, feita especialmente para você! </p>
+
+                    </div>
+
+                </div>
+
+                <div id="custom" class="tab-content">
+                    <div id="base-custom">
+
+                        <!-- preview -->
+                        <div class="preview" id="preview-container">
+                            <div class="layers">
+                                <img src="scr/ursinho-custom/cores/bear-basse.png" alt="Base Preview" id="preview-base">
+                                <img src="" alt="" id="preview-hoodie">
+                                <img src="" alt="" id="preview-dress">
+                                <img src="" alt="" id="preview-bag">
+                                <img src="" alt="" id="preview-fones">
+                                <img src="" alt="" id="preview-costumes">
+                                <img src="" alt="" id="preview-extras">
+                                <img src="" alt="" id="preview-bow">
+                            </div>
+
+                            <!-- <div id="custom-price">
+                                <p>Valor: R$</p>
+                                <p class="price">55</p>
+                            </div>
+
+                            <div class="ready">
+                                <button>pronto!</button>
+                            </div> -->
+                        </div>
+
+
+                        <!-- tabs custom -->
+                        <div class="custom-options">
+                            <div class="tabs-custom-content" id="tabs-container">
+                                <button class="tab-custom active" data-tab="detalhes">cor</button>
+                                <button class="tab-custom" data-tab="vestido">rosto</button>
+                                <button class="tab-custom" data-tab="capuz">capuz</button>
+                                <button class="tab-custom" data-tab="bolsas">bolsas</button>
+                                <button class="tab-custom" data-tab="fantasias">cachecol</button>
+                                <button class="tab-custom" data-tab="laços">lacinhos</button>
+                                <button class="tab-custom" data-tab="headphones">fones</button>
+                            </div>
+                            <!-- categorias -->
+                            <div id="vestido-category" class="category">
+                                <img class="item" alt="opções de rosto" src="/scr/ursinho-custom/face/face-black.png">
+                                <img class="item" alt="opções de rosto" src="/scr/ursinho-custom/face/face-blue.png">
+                                <img class="item" alt="opções de rosto" src="/scr/ursinho-custom/face/face-white.png">
+                            </div>
+
+                            <div id="capuz-category" class="category">
+                                <img class="item" alt="opção de capuz" src="/scr/ursinho-custom/touca/head-bl.png">
+                                <img class="item" alt="opção de capuz" src="/scr/ursinho-custom/touca/head-orange.png">
+                                <img class="item" alt="opção de capuz" src="/scr/ursinho-custom/touca/head-red.png">
+                                <img class="item" alt="opção de capuz" src="/scr/ursinho-custom/touca/head-wt.png">
+                                <img class="item" alt="opção de capuz" src="/scr/ursinho-custom/touca/head-bl.png">
+
+                            </div>
+
+                            <div id="bolsas-category" class="category">
+                                <img class="item" alt="opções de bolsas" src="/scr/ursinho-custom/bolsa/black-bg.png">
+                            </div>
+
+                            <div id="headphones-category" class="category">
+                                <img class="item" alt="escolha de headphones"
+                                    src="/scr/ursinho-custom/fone/black-hp.png">
+                                <img class="item" alt="escolha de headphones"
+                                    src="/scr/ursinho-custom/fone/gray-hp.png">
+
+                            </div>
+
+                            <div id="laços-category" class="category">
+                                <img class="item" alt="escolha de lacinhos" src="/scr/ursinho-custom/laco/bl-bow.png">
+                                <img class="item" alt="escolha de lacinhos" src="/scr/ursinho-custom/laco/pink-bow.png">
+                                <img class="item" alt="escolha de lacinhos" src="/scr/ursinho-custom/laco/red-bow.png">
+                                <img class="item" alt="escolha de lacinhos" src="/scr/ursinho-custom/laco/pr-bow.png">
+                                <img class="item" alt="escolha de lacinhos" src="/scr/ursinho-custom/laco/yllw-bow.png">
+                            </div>
+
+                            <div id="fantasias-category" class="category">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/nc-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/pink-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/pr-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/rdd-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/rddd-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/red-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/reed-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/wt-lace.png">
+                                <img class="item" alt="escolha de cachecol"
+                                    src="/scr/ursinho-custom/cachecol/yllw-lace.png">
+                            </div>
+
+                            <div id="detalhes-category" class="category active">
+                                <img class="item" alt="escolha de detalhes" src="/scr/ursinho-custom/cores/base-b.png">
+                                <img class="item" alt="escolha de detalhes" src="/scr/ursinho-custom/cores/base-bb.png">
+                                <img class="item" alt="escolha de detalhes" src="/scr/ursinho-custom/cores/base-p.png">
+                                <img class="item" alt="escolha de detalhes" src="/scr/ursinho-custom/cores/bear-basse.png">
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- <div id="faq" class="tab-content">
+                    <div class="question-list">
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>quais opções de
+                                personalização estão disponíveis para
+                                a Miffy?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">as opções de personalização dependem dos materiais disponíveis em
+                                estoque no momento da
+                                compra. se uma cor ou material específico não estiver disponível, ele ficará oculto no
+                                catálogo até que seja reposto.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>o pagamento é seguro? quais
+                                métodos de pagamento
+                                vocês aceitam?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">sim, o pagamento é 100% seguro! utilizamos a plataforma infinity pay,
+                                que oferece as
+                                opções de pagamento via Pix, boleto bancário e cartão de crédito (parcelamento em até 5x
+                                sem juros). se preferir, também pode efetuar a compra pela shopee.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>a personalização que eu
+                                quero não tem!<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">se a personalização que você deseja não estiver disponível, entre em
+                                contato conosco!
+                                estamos sempre buscando novas opções de personalização e podemos ajudar a verificar a
+                                disponibilidade de materiais ou até criar uma opção especial para você.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>qual é a política de
+                                troca ou reembolso caso eu
+                                me arrependa da compra?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">nossa política de troca e reembolso é a seguinte: você pode
+                                desistir da compra até
+                                24 horas após o pagamento e receber um reembolso total. caso o prazo passe, será
+                                aplicada uma taxa de 10% sobre o valor pago. se desejar reembolso após receber o
+                                produto, é necessário devolver o item via Correios por conta do cliente, e o valor do
+                                produto será
+                                reembolsado em até 3 dias úteis.
+                            </p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>qual o prazo de postagem
+                                para o meu pedido?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">o prazo para postagem é de até 3 dias úteis após a confirmação do
+                                pagamento. faremos o
+                                possível para enviar o seu pedido o mais rápido possível!</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>existe algum limite de
+                                quantidade para
+                                personalizações?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">não há limite de quantidade, mas lembre-se de que pedidos grandes
+                                podem levar mais tempo
+                                para serem processados. caso precise de um grande volume, recomendamos entrar em contato
+                                para garantir que o prazo de entrega seja adequado.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>o valor do frete é fixo ou
+                                varia dependendo do meu
+                                endereço?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">o valor do frete varia de acordo com o endereço de entrega. Ele é
+                                calculado
+                                automaticamente pelo sistema dos Correios no momento da compra.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>posso acompanhar o status
+                                do meu pedido após a
+                                compra?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">com certeza! Assim que o pedido for postado, enviaremos o código de
+                                rastreamento para o
+                                seu whatsApp e e-mail, para que você possa acompanhar o andamento da entrega.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>como posso enviar o
+                                arquivo da minha miffy
+                                personalizada pelo whatsApp?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">quando finalizar a personalização, basta salvar o arquivo PDF com a
+                                Miffy personalizada e
+                                seus dados. em seguida, envie esse arquivo para nós pelo whatsApp e estaremos prontos
+                                para dar continuidade ao seu pedido!
+                            </p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>vocês oferecem descontos ou
+                                promoções?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">sim, oferecemos promoções de aniversário e de fidelidade! fique atento
+                                às nossas redes
+                                sociais e à nossa loja para aproveitar as ofertas especiais.</p>
+                        </div>
+                        <div class="question">
+                            <p class="question-a"><i class="fa-solid fa-circle-question"></i>posso escolher o formato e
+                                a cor da miffy ou é só um
+                                design fixo?<i class="fa-solid fa-caret-down"></i></p>
+                            <p class="question-b">a miffy segue um design padrão, mas você pode personalizar as cores e
+                                adicionar
+                                acessórios conforme sua preferência!</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div id="shipping" class="tab-content"></div>
+ -->
+
+            </div>
+
+            <footer>
+
+                <a href="https://github.com/karolinadornelas"><i class="fa-brands fa-github"></i>karolinadornelas</a>
+            </footer>
+        </div>
+        <script src="main.js"></script>
+</body>
+
+</html>
